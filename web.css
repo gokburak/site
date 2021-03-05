@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS';
+
+}
+.nav-bar{
+        background-color: rgb(15, 167, 142);
+        color: rgba(141, 210, 30, 0.514);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+.logo{
+
+    height: 70px;
+    
+}
+a{
+    margin-left: 2rem;
+   
+}
+/* .menü{
+    
+ 
+} */
+.menü ul{
+    list-style: none;
+    display: flex;
+    color:white;
+}
+.menü ul li {
+    flex-grow: 1;
+    color: white;
+    margin-right: 1rem;
+}
+.menü ul li a{
+    font-size: 1.2rem;
+    color: white;
+    padding: 1rem 
+}
+.menü ul li a:hover{
+    background: yellow;
+    color: darkblue;
+}
+.banner{
+background: url(https://images.unsplash.com/photo-1608913289308-cf0ac2eaefe8?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDY3fEd0ckJTY3YxYjVNfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1924&q=60) no-repeat;
+height:900px;
+   
+}
+.banner-text{
+    font-size: 3rem;
+color: purple;
+padding: 10% 0 ;
+
+}
+.banner-text-item{
+    font-size: 2rem;
+    width: 70%;
+    margin: auto;
+}
+.banner-text-item h2{
+    font-size: 4rem;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+}
+.banner-text-item p {
+    font-size: 2rem;
+    line-height: 3rem;
+    
+}
+.main-content{
+    display: flex;
+    
+    flex-direction:row ;
+    padding: 1% 0;
+
+
+}
+.main-item{
+flex-grow: 1;
+line-height: 1.5rem;
+padding: 2%;
+text-align: center;
+
+}
+.main-item h2{
+    color: rgb(15, 167, 142);
+   
+}
+.main-item p {
+    margin-top: 1rem;
+}
+.form-container{
+   background-image: url(/pexels.jpeg);
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
+   
+}
+.form-container h2{
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    color: #23deeb;
+}
+.form{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    
+}
+.form input{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 5px;
+    width: 90%;
+}
+.form textarea {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+
+    width: 90%;
+}
+.form button{
+    background: darkcyan;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin: auto;
+    color: white;
+    font-size: 1.2rem;
+    width: 50%;
+    align-self: center;
+} 
+@media(max-width:600px){
+    .nav-bar{
+       flex-direction: column;
+       text-align: center;
+    }
+    .menü ul{
+        flex-direction: column;
+    }
+    .menü ul li{
+        padding: 7px;
+    }
+    .banner h2{
+        font-size: 3rem;
+    }
+    .banner-text-item p {
+        font-size: 2rem;
+        line-height: 3rem;
+        
+    }
+    .main-content{
+        flex-direction: column;
+        padding: 3%;
+    }
+
+}
